@@ -5,9 +5,9 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: Contract
-    network: mainnet
+    network: rinkeby
     source:
-      address: "0x885EF47c3439ADE0CB9b33a4D3c534C99964Db93"
+      address: "0xD8C88BE5e8EB88E38E6ff5cE186d764676012B0b"
       abi: Contract
     mapping:
       kind: ethereum/events
@@ -36,7 +36,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: PublicLock
-    network: mainnet
+    network: rinkeby
     source:
       abi: PublicLock
     mapping:
