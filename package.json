@@ -4,10 +4,10 @@
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ unlock-protocol/unlock",
-    "create-local": "graph create --node http://localhost:8020/ unlock-protocol/unlock",
-    "remove-local": "graph remove --node http://localhost:8020/ unlock-protocol/unlock",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 unlock-protocol/unlock"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ unlock-protocol/unlock-rinkeby",
+    "create-local": "graph create --node http://localhost:8020/ unlock-protocol/unlock-rinkeby",
+    "remove-local": "graph remove --node http://localhost:8020/ unlock-protocol/unlock-rinkeby",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 unlock-protocol/unlock-rinkeby"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.15.0",
