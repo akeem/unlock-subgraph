@@ -35,6 +35,7 @@ export function handleTransfer(event: Transfer): void {
     key.keyId = event.params._tokenId;
     key.owner = event.params._to.toHex();
     key.expiration = lockContract.keyExpirationTimestampFor(event.params._to);
+    key.tokenURI = lockContract.tokenURI(key.keyId);
     key.save();
   } else {
     let keyHolder = loadKeyHolder(event.params._to.toHex());
